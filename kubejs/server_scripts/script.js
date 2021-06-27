@@ -88,7 +88,7 @@ onEvent('recipes', event => {
 
   for (let i = 0; i < blastFurnaceRecipes.length; i++) {
 
-    event.remove({ output: blastFurnaceRecipes[i], type: 'minecraft:blasting' })
+    event.remove({ output: blastFurnaceRecipes[i], type: 'minecraft:smelting' })
 
   } //remove the blast furnace recipes from the regular furnace
 
