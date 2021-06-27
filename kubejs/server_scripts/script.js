@@ -18,7 +18,7 @@ onEvent('recipes', event => {
       ], {
         C: '#minecraft:stone_crafting_materials',
         B: 'minecraft:bricks'
-      }) //chnage thr furnace recipe to require bricks
+      }) //change the furnace recipe to require bricks
 
       event.recipes.minecraft.campfire_cooking('minecraft:brick', 'minecraft:clay_ball') //allow bricks to be made in the campfire
 
