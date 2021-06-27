@@ -8,7 +8,7 @@ console.info('!')
 
 onEvent('recipes', event => {
 
-    //
+    //Furnace Changes
 
    // event.remove({output: 'minecraft:furnace'})
     event.shaped('minecraft:furnace', [
