@@ -160,8 +160,8 @@ onEvent('recipes', event => {
 		event.recipes.create.cutting(Item.of(Planks[i], 4), strippedLogs[i])
 		event.recipes.create.cutting(Item.of(Planks[i], 4), strippedWood[i])
 
-		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), Logs[i], [{ stripping: false, output: '2x immersiveengineering:dust_wood' }], strippedLogs[i])
-		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), Wood[i], [{ stripping: false, output: '2x immersiveengineering:dust_wood' }], strippedWood[i])
+		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), Logs[i], [{ stripping: false, output: '1x immersiveengineering:dust_wood' },{ stripping: true, output: '1x immersiveengineering:dust_wood' }], strippedLogs[i])
+		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), Wood[i], [{ stripping: false, output: '1x immersiveengineering:dust_wood' },{ stripping: true, output: '1x immersiveengineering:dust_wood' }], strippedWood[i])
 		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), strippedLogs[i], [{ stripping: false, output: 'immersiveengineering:dust_wood' }])
 		event.recipes.immersiveengineering.sawmill(Item.of(Planks[i], 6), strippedWood[i], [{ stripping: false, output: 'immersiveengineering:dust_wood' }])
 
