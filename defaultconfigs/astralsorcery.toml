@@ -375,7 +375,7 @@
 			#Range: 0.0 ~ 128.0
 			rangePerLens = 16.0
 			#Set this to false to disable this ritual effect
-			enabled = true
+			enabled = false
 
 		[constellation.effect.evorsio]
 			#Defines the radius (in blocks) in which the ritual will do its effects.
@@ -562,7 +562,7 @@
 			#Range: 0.0 ~ 100.0
 			chargeCostPerTravelTick = 2.5
 			#Set this to false to disable this mantle effect
-			enabled = true
+			enabled = false
 			#Set the amount of food recovered by food cycle.
 			#Range: 0.0 ~ 100.0
 			foodPerCycle = 1.0
