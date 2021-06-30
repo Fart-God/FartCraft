@@ -35,7 +35,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_log',
 		'betterendforge:helix_tree_log',
 		'betterendforge:umbrella_tree_log',
-		'betterendforge:jellyshroom_log'
+		'betterendforge:jellyshroom_log',
+		'ars_nouveau:blue_archwood_log',
+		'ars_nouveau:green_archwood_log',
+		'ars_nouveau:red_archwood_log',
+		'ars_nouveau:purple_archwood_log'
 	]; //every log
 
 	const Wood = [
@@ -58,7 +62,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_bark',
 		'betterendforge:helix_tree_bark',
 		'betterendforge:umbrella_tree_bark',
-		'betterendforge:jellyshroom_bark'
+		'betterendforge:jellyshroom_bark',
+		'ars_nouveau:blue_archwood_wood',
+		'ars_nouveau:green_archwood_wood',
+		'ars_nouveau:red_archwood_wood',
+		'ars_nouveau:purple_archwood_wood'
 	]; //every wood/bark
 
 	const oredictLogs = [
@@ -81,7 +89,11 @@ onEvent('recipes', event => {
 		'#betterendforge:tenanea_logs',
 		'#betterendforge:helix_tree_logs',
 		'#betterendforge:umbrella_tree_logs',
-		'#betterendforge:jellyshroom_logs'
+		'#betterendforge:jellyshroom_logs',
+		'#minecraft:logs/archwood',
+		'#minecraft:logs/archwood',
+		'#minecraft:logs/archwood',
+		'#minecraft:logs/archwood'
 	]; //every item with logs tag
 
 	const strippedLogs = [
@@ -104,7 +116,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_stripped_log',
 		'betterendforge:helix_tree_stripped_log',
 		'betterendforge:umbrella_tree_stripped_log',
-		'betterendforge:jellyshroom_stripped_log'
+		'betterendforge:jellyshroom_stripped_log',
+		'ars_nouveau:stripped_blue_archwood_log',
+		'ars_nouveau:stripped_green_archwood_log',
+		'ars_nouveau:stripped_red_archwood_log',
+		'ars_nouveau:stripped_purple_archwood_log'
 	]; //every stripped log
 
 	const strippedWood = [
@@ -127,7 +143,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_stripped_bark',
 		'betterendforge:helix_tree_stripped_bark',
 		'betterendforge:umbrella_tree_stripped_bark',
-		'betterendforge:jellyshroom_stripped_bark'
+		'betterendforge:jellyshroom_stripped_bark',
+		'ars_nouveau:stripped_blue_archwood_wood',
+		'ars_nouveau:stripped_green_archwood_wood',
+		'ars_nouveau:stripped_red_archwood_wood',
+		'ars_nouveau:stripped_purple_archwood_wood'
 	]; //every stripped wood/bark
 
 	const Planks = [
@@ -150,7 +170,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_planks',
 		'betterendforge:helix_tree_planks',
 		'betterendforge:umbrella_tree_planks',
-		'betterendforge:jellyshroom_planks'
+		'betterendforge:jellyshroom_planks',
+		'ars_nouveau:archwood_planks',
+		'ars_nouveau:archwood_planks',
+		'ars_nouveau:archwood_planks',
+		'ars_nouveau:archwood_planks'
 	]; //every plank
 
 	for (let i = 0; i < Logs.length; i++) {
@@ -184,7 +208,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_log',
 		'betterendforge:helix_tree_log',
 		'betterendforge:umbrella_tree_log',
-		'betterendforge:jellyshroom_log'
+		'betterendforge:jellyshroom_log',
+		'ars_nouveau:blue_archwood_log',
+		'ars_nouveau:green_archwood_log',
+		'ars_nouveau:red_archwood_log',
+		'ars_nouveau:purple_archwood_log'
 	]; //logs without create stripped recipe
 
 	const missingWood = [
@@ -199,7 +227,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_bark',
 		'betterendforge:helix_tree_bark',
 		'betterendforge:umbrella_tree_bark',
-		'betterendforge:jellyshroom_bark'
+		'betterendforge:jellyshroom_bark',
+		'ars_nouveau:blue_archwood_wood',
+		'ars_nouveau:green_archwood_wood',
+		'ars_nouveau:red_archwood_wood',
+		'ars_nouveau:purple_archwood_wood'
 	]; //wood/bark without create stripped recipe
 
 	const missingStrippedLogs = [
@@ -214,7 +246,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_stripped_log',
 		'betterendforge:helix_tree_stripped_log',
 		'betterendforge:umbrella_tree_stripped_log',
-		'betterendforge:jellyshroom_stripped_log'
+		'betterendforge:jellyshroom_stripped_log',
+		'ars_nouveau:stripped_blue_archwood_log',
+		'ars_nouveau:stripped_green_archwood_log',
+		'ars_nouveau:stripped_red_archwood_log',
+		'ars_nouveau:stripped_purple_archwood_log'
 	]; //stripped version of logs for recipe
 
 	const missingStrippedWood = [
@@ -229,7 +265,11 @@ onEvent('recipes', event => {
 		'betterendforge:tenanea_stripped_bark',
 		'betterendforge:helix_tree_stripped_bark',
 		'betterendforge:umbrella_tree_stripped_bark',
-		'betterendforge:jellyshroom_stripped_bark'
+		'betterendforge:jellyshroom_stripped_bark',
+		'ars_nouveau:stripped_blue_archwood_wood',
+		'ars_nouveau:stripped_green_archwood_wood',
+		'ars_nouveau:stripped_red_archwood_wood',
+		'ars_nouveau:stripped_purple_archwood_wood'
 	]; //stripped version of wood/bark for recipe
 
 	for (let i = 0; i < missingLogs.length; i++) {
@@ -238,8 +278,5 @@ onEvent('recipes', event => {
 		event.recipes.create.cutting(missingStrippedWood[i], missingWood[i])
 
 	} //adding recipes for stripped logs
-
-	//event.recipes.create.cutting('4x minecraft:oak_planks', 'minecraft:stripped_oak_log')
-	//event.recipes.create.cutting('4x minecraft:oak_planks', 'minecraft:stripped_oak_wood')
 
 })
